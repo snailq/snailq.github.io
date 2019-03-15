@@ -6,7 +6,7 @@ title: "SNAIL-QH"
 summary: "生于忧患死于安乐"
 ---
 
-{% for post in site.posts limit: 5 %}
+{% for post in paginator.posts %}
   <article class="index-page">
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {{ post.excerpt | strip_html }}

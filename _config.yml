@@ -18,7 +18,7 @@ social:
     twitter: snailq
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 
 # Posts settings
 future: true
@@ -35,8 +35,8 @@ compress_html:
 disqus_username: wqh19317
 
 plugins: [jekyll-paginate]
-paginate: 3
-paginate_path: "page/:num/"
+paginate: 6
+paginate_path: "posts/:num/"
 
 sass:
   sass_dir: assets/_sass
