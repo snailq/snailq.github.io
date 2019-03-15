@@ -32,6 +32,11 @@ compress_html:
   clippings: all
   endings: all
 
+disqus_username: wqh19317
+
+plugins: [jekyll-paginate]
+paginate: 3
+paginate_path: "page/:num/"
 
 sass:
   sass_dir: assets/_sass

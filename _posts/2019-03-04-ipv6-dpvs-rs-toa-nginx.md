@@ -4,11 +4,12 @@ layout: post
 title:  "ipv6 dpvs rs toa nginx"
 crawlertitle: "ipv6 dpvs rs toa nginx"
 summary: "ipv6 dpvs rs toa nginx"
+comments: true
 date:   2019-03-04
 categories: posts
 author: snailqh
 ---
-```shell
+```nginx
 log_format  main  '$toa_remote_addr $toa_remote_port $remote_addr - $remote_user [$time_local] "$request" '
                   '$status $body_bytes_sent "$http_referer" '
                   '"$http_user_agent" "$http_x_forwarded_for"';
