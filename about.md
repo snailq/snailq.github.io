@@ -8,4 +8,4 @@ summary: "About me"
 active: about
 ---
 
- 生于忧患死于安乐
+ <p align="center"> 生于忧患死于安乐 </p>
