@@ -32,7 +32,16 @@ compress_html:
   clippings: all
   endings: all
 
-disqus_username: wqh19317
+comments: true
+
+comments:
+  gitalk: true
+  gitalk_clientID: '9d209586b7c49c439f3a'
+  gitalk_Secret: 'aef7247a46e03dbb6c68ffd9908097cabee22439'
+  gitalk_repo: 'snailq.github.io'
+  gitalk_owner: 'snailqh'
+  gitalk_admin: 'snailqh'
+  distractionFreeMode: false
 
 plugins: [jekyll-paginate]
 paginate: 6

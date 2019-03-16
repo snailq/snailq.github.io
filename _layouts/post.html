@@ -2,7 +2,8 @@
 layout: default
 ---
 <article class="post">
-
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <h1 class="post-title">{{ page.title }}</h1>
 
   <p class="post-meta">
@@ -32,7 +33,21 @@ layout: default
           <span class="link-to-post__title">{{ page.previous.title }}</span>
         </a>
       {% endif %}
+      {% if site.comments.gitalk %}
+      <script>
+          var gitalk = new Gitalk({
+            clientID: '{{ site.comments.gitalk_clientID }}',
+            clientSecret: '{{ site.comments.gitalk_Secret }}',
+            repo: '{{ site.comments.gitalk_repo }}',
+            owner: '{{ site.comments.gitalk_owner }}',
+            admin: '{{ site.comments.gitalk_admin }}',
+            id: location.pathname,
+            distractionFreeMode: '{{ site.comments.distractionFreeMode }}'
+          })
+          gitalk.render('gitalk_container')
+      </script>
+      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      {% endif %}
     </div>
   </div>
-{% include comments.html %}
 </article>
