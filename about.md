@@ -9,3 +9,6 @@ active: about
 ---
 
  <p align="center"> 生于忧患死于安乐 </p>
+<p align="center">
+  <a href="https://github.com/snailq"> github </a>
+</p>
