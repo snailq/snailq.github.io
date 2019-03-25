@@ -43,7 +43,7 @@ comments:
   gitalk_admin: 'snailqh'
   distractionFreeMode: false
 
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-admin]
 paginate: 6
 paginate_path: "posts/:num/"
 
