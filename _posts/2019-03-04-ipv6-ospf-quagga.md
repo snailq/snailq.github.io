@@ -47,8 +47,8 @@ dpdk1.kni: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 100
 ##### /etc/quagga/ospf6d.conf
 ```shell
 !
-password 8 yidian.com
-enable password 8 yidian.com
+password 8 yyyy.com
+enable password 8 yyyy.com
 log file /var/log/quagga/ospfd.log
 service password-encryption
 !
